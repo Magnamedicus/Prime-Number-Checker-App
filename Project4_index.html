@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime or Not-Prime</title>
+    <link rel="stylesheet" href="Project4_styles.css">
+</head>
+<body>
+    <!-- div container for particle effects -->
+    <div id="particles-js"></div>
+
+    <!-- Main HTML elements, including headings, an input field with label, and a button that will call prime_or_notPrime() when clicked -->
+    <div class="container">
+        <h1>Welcome to Prime Time</h1>
+        <h2>Let's Check Some Numbers!</h2>
+        <label for="inputNumber">Enter a number between 2 and 9999:</label>
+        <input type="number" id="inputNumber" min="2" max="9999" required><br><br>
+        <button onclick="prime_or_notPrime()">Is it prime?</button>
+        <p id="prime_result"></p>
+    </div>
+
+      <!-- The particleJS library is included in the HTML to create background effects. Particle settings can be seen in the script tag below-->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="Project4_script.js"></script>
+    
+
+<script>
+  //In line particle effect settings that invoke the particlesJS library
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 170,  
+          "density": {
+            "enable": true,
+            "value_area": 350  
+          }
+        },
+        "color": {
+          "value": "#00d8ff"
+        },
+        "shape": {
+          "type": "rectangle"
+        },
+        "opacity": {
+          "value": 0.8,
+          "random": true,
+          
+        },
+        "size": {
+          "value": 10,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 90,
+          "color": "#00d8ff"
+        },
+        "move": {
+          "enable": true,
+          "speed": 2.5, 
+          "bounce": true
+        }
+        
+      }
+
+      
+    });
+  </script>
+  
+</body>
+</html>
