@@ -1,5 +1,5 @@
 
-//Peter Hornbach, CSC6303, Project 4, Prime Number Calculator Web-App written in JavaScript, HTML and CSS. Visual Studio Code was used for writing/testing the program
+//Prime Number Calculator Web-App written in JavaScript, HTML and CSS. Visual Studio Code was used for writing/testing the program
 
 
 
